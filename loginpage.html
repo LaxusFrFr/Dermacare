@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign In</title>
+        <link rel="stylesheet" type="text/css" href="css/access.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <head>
+            <style>
+                body {
+                    margin: 0; /* Remove default margin */
+                    height: 100vh; /* Full height of the viewport */
+                    background-image: url('images/bg2.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center; /* Center the image */
+                }
+</style>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/animations.css">  
+<link rel="stylesheet" href="css/main.css">  
+<link rel="stylesheet" href="css/login.css">
+<head>
+    <style>
+        body {
+            margin: 0; /* Remove default body margin */
+        }
+        header {
+            position: absolute;
+            top: 2%;
+            left: 2%; /* Add left positioning */
+        }
+        .logo {
+            text-decoration: none;
+            color: black;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.9em;
+            font-weight: 750;
+        }
+        .logo img {
+            vertical-align: middle;
+            margin-right: 10px; /* Adjusted for better spacing */
+        }
+        .logo span {
+            color: #ff0157;
+            font-size: 1.3em;
+        }
+    </style> 
+</head>
+<body>
+    <header>
+        <a href="javascript:history.back()" class="back-link">
+            <img src="images/Home1.png" alt="Back Arrow" class="back-arrow" /> <!-- Image arrow -->
+        </a>
+    </header>
+
+    <style>
+        .back-link {
+            text-decoration: none; /* No underline */
+            transition: color 0.3s; /* Smooth transition */
+            display: inline-flex; /* Align icon */
+            align-items: center; /* Center icon vertically */
+        }
+
+        .back-arrow {
+            width: 80px; /* Set a larger width for the home image */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .back-link:hover .back-arrow {
+            opacity: 0.7; /* Slightly change opacity on hover */
+        }
+    </style>
+</body>
+
+
+
+
+        <div style="padding-left: 300px; padding-top: 240px" id="admindiv">
+            <img
+                src="images/adminlogo.png"
+                alt="Admin Icon"
+                width="100"
+                height="100"
+                style="vertical-align: middle"
+            />
+            <a
+                href="login.php"
+                class="btn"
+                style="
+                    font-size: 17px;
+                    color: #fff;
+                    background: #ff0157;
+                    display: inline-block;
+                    padding: 10px 30px;
+                    margin-top: 20px;
+                    text-decoration: none;
+                    letter-spacing: 1px;
+                    transition: 0.5s;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 1.3em;
+                    font-weight: 600;
+                "
+                onmouseover="this.style.letterSpacing='4px'"
+                onmouseout="this.style.letterSpacing='1px'"
+                >Admin</a
+            >
+        </div>
+
+        <div class="vl"></div>
+
+        <div style="position: absolute; top: 37.5%; left: 67%" id="userdiv">
+            <img
+                src="images/UserLogo.png"
+                alt="User Icon"
+                width="70"
+                height="70"
+                style="vertical-align: middle"
+            />&nbsp;&nbsp;
+            <a
+                href="login.php"
+                class="btn"
+                style="
+                    font-size: 17px;
+                    color: #fff;
+                    background: #ff0157;
+                    display: inline-block;
+                    padding: 10px 30px;
+                    margin-top: 20px;
+                    text-decoration: none;
+                    letter-spacing: 1px;
+                    transition: 0.5s;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 1.3em;
+                    font-weight: 600;
+                "
+                onmouseover="this.style.letterSpacing='4px'"
+                onmouseout="this.style.letterSpacing='1px'"
+                >User</a
+            >
+        </div>
+    </body>
+</html>

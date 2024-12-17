@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Us | Dermacare</title>
+    <link rel="icon" href="images/B2.ico" type="image/dermacare-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/feedback.css">
+    <style>
+        body {
+            background-image: url('images/bg2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+}
+
+        /* Initial style for the container */
+        .form-container {
+            opacity: 0;
+            transform: translateY(-50px); /* Start from above the screen */
+            animation: pop-up 0.2s ease-out forwards; /* Apply the animation */
+        }
+        
+
+        /* Define the pop-up animation */
+        @keyframes pop-up {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px); /* Start above the screen */
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0); /* Move to its original position */
+            }
+        }
+
+        /* Hover effect */
+        .form-container:hover {
+            transform: scale(1.05); /* Slightly enlarge the container */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for effect */
+            background-color: #f7f7f7; /* Change background color on hover */
+            transition: all 0.3s ease-in-out; /* Smooth transition */
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Feedback Section -->
+    <section class="feedback-section" id="feedback">
+        <!-- Form Container -->
+        <div class="form-container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="../dermacare/Dermacare Logo.svg" alt="Dermacare Logo">
+            </div>
+            <!-- Form Header -->
+            <div class="form-header">
+                <h2 class="title">How was your experience?</h2>
+                <p>We would love to hear about your experience with our service!</p>
+            </div>
+            <!-- Feedback Form -->
+            <form action="insertfeedback.php" method="post" enctype="multipart/form-data" class="feedback-form">
+                <!-- Name Input -->
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                </div>
+                <!-- Rating Input -->
+                <div class="input-group">
+                    <label for="stars">Overall Rating</label>
+                    <select name="stars" id="stars" required>
+                        <option value="">Select</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <!-- Feedback Textarea -->
+                <div class="input-group">
+                    <label for="feedback">Comments</label>
+                    <textarea name="feedback" id="feedback" placeholder="Share your experience with us..." required></textarea>
+                </div>
+                <!-- File Upload -->
+                <div class="input-group file-upload">
+                    <label for="file1">Upload Your Picture (Optional)</label>
+                    <input type="file" id="file1" name="file1" accept="image/*">
+                </div>
+                <!-- Buttons -->
+                <div class="form-actions">
+                    <button type="submit" name="submit1" class="submit-btn">Submit</button>
+                    <button type="button" class="skip-btn" onclick="window.location.href='index.php';">Skip</button>
+                </div>
+                <div class="form-header">
+                    <p>(If you have already shared your experience, click the skip button)</p>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
